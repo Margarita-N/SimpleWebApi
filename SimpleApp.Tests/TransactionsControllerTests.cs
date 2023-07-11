@@ -18,12 +18,12 @@ using Xunit;
 
 namespace SimpleApp.Tests
 {
-    public class TransactionsServiceTests
+    public class TransactionsControllerTests
     {
         public Mock<ITransactionRepository> _transactionRepositoryMock;
         public TransactionsController _sut;
 
-        public TransactionsServiceTests()
+        public TransactionsControllerTests()
         {
             _transactionRepositoryMock = new Mock<ITransactionRepository>();
             _sut = new TransactionsController(_transactionRepositoryMock.Object);
