@@ -52,7 +52,7 @@ namespace SimpleWebApi.Controllers
         }
 
         [HttpPost("transaction")]
-        //[RequireRole(RoleData.AdminDefault)]
+        [RequireRole(RoleData.AdminDefault)]
         public IActionResult CreateTransaction(TransactionModel transactionModel)
         {
             if (!ModelState.IsValid)
